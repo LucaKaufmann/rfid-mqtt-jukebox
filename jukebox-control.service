@@ -1,0 +1,13 @@
+[Unit]
+Description=JukeboxControl
+After=network.target
+
+[Service]
+ExecStart=/home/pi/jukebox_control
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
